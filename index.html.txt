@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm Your Name</h1>
+            <p>Aspiring Cloud & DevOps Engineer</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am passionate about Cloud Computing, AWS, and DevOps.
+            I enjoy building scalable and responsive web applications.
+        </p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-container">
+
+            <div class="card">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>AWS S3 Hosting</h3>
+                <p>Hosted static websites using Amazon S3.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-server"></i>
+                <h3>DevOps Pipeline</h3>
+                <p>Created CI/CD workflows using GitHub Actions.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Built responsive websites using HTML and CSS.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: yourmail@example.com</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Your Name | Portfolio</p>
+    </footer>
+
+</body>
+</html>
