@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowCloudFrontOACAccess",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "cloudfront.amazonaws.com"
+      },
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::aneena-portfolio-site-2026-342285599876-ap-south-1-an/*",
+      "Condition": {
+        "StringLike": {
+          "AWS:SourceArn": "arn:aws:cloudfront::*:distribution/E31D64ETWQWG39"
+        }
+      }
+    }
+  ]
+}
