@@ -212,6 +212,74 @@ Successfully executed GitHub Actions CI/CD Pipeline.
 
 ---
 
+Task 4: Automated Deployment of Dockerized Application on Cloud VM with Nginx Reverse Proxy
+
+Objective
+
+Deploy a Dockerized portfolio website on AWS EC2 using Nginx Reverse Proxy for traffic routing and application access.
+
+Technologies Used
+
+* Docker
+* Nginx
+* AWS EC2
+* Ubuntu Linux
+* SSH
+* Git & GitHub
+
+Services and Tools Used
+
+Nginx Reverse Proxy
+
+* Installed and configured Nginx on EC2
+* Forwarded HTTP requests from port 80 to the Docker container running on port 8080
+* Improved application accessibility and management
+
+Docker
+
+* Containerized the portfolio website
+* Ran the application inside a Docker container
+* Managed container deployment on EC2
+
+AWS EC2
+
+* Hosted the Dockerized application
+* Managed server configuration and networking
+
+Deployment Steps
+
+1. Connected to the EC2 instance using SSH.
+2. Installed and configured Nginx.
+3. Stopped the existing Docker container running on port 80.
+4. Reconfigured the Docker container to run on port 8080.
+5. Configured Nginx Reverse Proxy to forward traffic to the Docker container.
+6. Tested Nginx configuration.
+7. Restarted Nginx service.
+8. Verified website accessibility through the EC2 public IP.
+
+Architecture
+
+Browser
+↓
+Nginx (Port 80)
+↓
+Docker Container (Port 8080)
+↓
+Portfolio Website
+
+Features
+
+* Reverse Proxy Configuration
+* Dockerized Application Hosting
+* EC2-Based Deployment
+* Port Management
+* Improved Application Routing
+
+Outcome
+
+Successfully configured Nginx Reverse Proxy on AWS EC2 to route incoming traffic to the Dockerized portfolio website running inside a container.
+
+
 Project Structure
 
 ```text
@@ -265,3 +333,5 @@ Acknowledgement
 This project was completed as part of the **Cloud Computing & DevOps Internship Program at Maincrafts Technology.
 
 Special thanks to Maincrafts Technology for providing practical exposure to AWS Cloud, Docker, DevOps practices, and CI/CD automation.
+
+
