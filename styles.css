@@ -1,76 +1,123 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:'Poppins', sans-serif;
-    line-height:1.6;
-    background:#f4f4f4;
-    color:#333;
+font-family:'Poppins',sans-serif;
+background:#0f172a;
+color:#f8fafc;
+line-height:1.6;
 }
 
 .hero{
-    height:100vh;
-    background:linear-gradient(to right,#007cf0,#00dfd8);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#0f172a,#1e293b);
 }
 
 .hero h1{
-    font-size:3rem;
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.hero h3{
+color:#38bdf8;
+margin-bottom:20px;
 }
 
 .hero p{
-    margin:15px 0;
+max-width:700px;
+margin:auto;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn,
+.btn-secondary{
+display:inline-block;
+padding:12px 28px;
+text-decoration:none;
+border-radius:8px;
+margin:10px;
+font-weight:600;
+transition:0.3s;
 }
 
 .btn{
-    display:inline-block;
-    padding:12px 25px;
-    background:white;
-    color:#007cf0;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
+background:#38bdf8;
+color:white;
+}
+
+.btn-secondary{
+border:2px solid #38bdf8;
+color:#38bdf8;
+}
+
+.btn:hover,
+.btn-secondary:hover{
+transform:translateY(-3px);
 }
 
 .about,
+.skills,
 .projects,
 .contact{
-    padding:60px 20px;
-    text-align:center;
+padding:80px 20px;
+text-align:center;
 }
 
+h2{
+font-size:2.5rem;
+margin-bottom:30px;
+}
+
+.skills-container,
 .project-container{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:30px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:30px;
 }
 
+.skill-card,
 .card{
-    background:white;
-    padding:25px;
-    width:280px;
-    border-radius:10px;
-    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+background:#1e293b;
+padding:25px;
+width:280px;
+border-radius:15px;
+border:1px solid #334155;
+transition:0.3s;
 }
 
+.skill-card:hover,
+.card:hover{
+transform:translateY(-10px);
+}
+
+.skill-card i,
 .card i{
-    font-size:40px;
-    margin-bottom:15px;
-    color:#007cf0;
+font-size:45px;
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.contact p{
+margin:15px 0;
+font-size:18px;
 }
 
 footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#020617;
+padding:20px;
+text-align:center;
+margin-top:50px;
 }
